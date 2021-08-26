@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 80vh;
+    height: 80%;
     margin: 10vh auto;
     border-radius: 20px;
     overflow: hidden;
@@ -34,12 +34,15 @@ h1{
     margin: 20px auto 15px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 22px;
+    font-weight: 900;
 }
 
 .cardBottom p{
     text-align: center;
     margin: auto 20px;
     font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.699);
 }
 
 .list{
@@ -59,6 +62,15 @@ h1{
 
 .list small{
     display: block;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+.grey{
+    margin-top: 4px;
+    color: rgba(128, 128, 128, 0.788);
+}
+.changeLi{
+    padding-left: 50px;
 }
 
 button{
@@ -77,10 +89,47 @@ button{
     box-shadow: 2px 19px 5px hsl(233, 19%, 91%);
     border: none;
 }
+.buttonOne:hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor:pointer;
+}
+.changeLi a:hover{
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttonTwo small:hover{
+    color: black;
+    cursor: pointer;
+}
 
 .buttonTwo{
     background-color: transparent;
     border: none;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
+    color: rgba(104, 102, 102, 0.815);
+    margin-bottom: 15px;
+}
+
+button small{
+    font-size: 14px;
+}
+
+li a{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: rgb(52, 52, 204);
+}
+
+
+
+@media (min-width: 475px){
+    .card{
+        width: 400px;
+    }
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
 }
